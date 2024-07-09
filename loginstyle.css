@@ -1,0 +1,317 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logopic img {
+    position: relative;
+    top: 0px;
+    max-width: 400px; 
+    height: 50px; 
+}
+
+.hamburger {
+    display: none;
+}
+
+.navBarButton ul {
+    display: flex;
+}
+
+.navBarButton ul li a {
+    font-weight: bold;
+    display: block;
+    color: #f05000;
+    font-size: 15px;
+    padding: 10px 15px;
+    border-radius: 50px;
+    transition: 0.3s;
+    margin: 0 5px;
+}
+
+.navBarButton ul li a:hover, .navBarButton ul li a.active {
+    color: white;
+    background: #f05000;
+}
+
+.navBarButton ul li #about-link.active {
+    color: white;
+    background: #f05000;
+}
+
+@media only screen and (max-width: 1320px) {
+    header {
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+        padding: 0 30px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: black;
+        margin: 6px 0;
+    }
+
+    header {
+        padding: 0 20px;
+    }
+
+    .navBarButton ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navBarButton ul li a {
+        font-size: 18px;
+        padding: 10px;
+    }
+}
+
+.hero-section {
+    background: url(kuhakucover.JPG) no-repeat center center;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+.hero-section::before {
+    background-color: rgba(0, 0, 0, 0.6);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero-section .container {
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-section h1 {
+    font-size: 5em;
+    padding: 3px;
+    background-color: #f05000;
+    color: white;
+    text-align: center;
+}
+
+.orange-square {
+    position: absolute; 
+    top: 119px;
+    bottom: 0px; 
+    right: 0px;  
+    width: 756px; 
+    height: 709px;
+    background-color: #f05000;
+}
+
+.orange-square .container1 {
+    height: 100%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; 
+    flex-direction: column;
+    text-align: justify; 
+    padding-top: 20px; 
+    padding-left: 20px; 
+}
+
+.orange-square h2 {
+    font-size: 3em;
+    background-color: #f05000;
+    color: white;
+    margin-top: 40px; 
+    text-align: center;
+}
+
+.orange-square h6 {
+    font-size: 17px; 
+    background-color: #f05000;
+    padding: 100px;
+    line-height: 1.5;
+    color: white;
+}
+
+.row {
+    margin: 50px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+:root {
+    --clr: #f05000;
+}
+ 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f05000;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+ 
+form /* the box on login */ {
+    background: #ffffff;
+    padding: 60px 80px 60px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+ 
+form h2 /* Sign In text*/ {
+    color: #f05000;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    letter-spacing: 0.1em;
+    margin-bottom: 50px;
+}
+ 
+.inputBox {
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+}
+ 
+.inputBox input {
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    color: #f8f3f3;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+ 
+.inputBox label {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #999;
+    text-transform: uppercase;
+}
+
+
+ 
+.inputBox label span {
+    position: relative;
+    display: inline-flex;
+    letter-spacing: 0.05em;
+    transition: 0.2s ease-in-out;
+}
+ 
+.inputBox input:focus ~ label span, .inputBox input:valid ~ label span {
+    color: var(--clr);
+    letter-spacing: 0.15em;
+    transform: translateY(-25px);
+}
+ 
+.inputBox input:focus, .inputBox input:valid {
+    border-bottom: 2px solid var(--clr);
+}
+ 
+.inputBox input[type="submit"] {
+    background: var(--clr);
+    border: none;
+    padding: 15px;
+    border-radius: 50px;
+    color: #1c2630;
+    font-size: 1.15em;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+    transition: 0.5s;
+}
+ 
+.inputBox input[type="submit"]:hover {
+    letter-spacing: 0.35em;
+}
+
+.inputBoxBottom {
+    position: relative;
+    width: 300px;
+    margin-bottom: 40px;
+}
+
+.inputBoxBottom label {
+    position: absolute;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    color: #f05000;
+    text-transform: uppercase;
+}
+ 
+form p {
+    color: #fff;
+}
+ 
+form p a {
+    color: var(--clr);
+    font-weight: 500;
+    text-decoration: none;
+}

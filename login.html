@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+    <header>
+        <div class="logopic">
+            <img src="logopic.png" a href="#" alt="Logo"> </a>
+        </div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="navBarButton">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="subscribe.html">Subscribe Now</a></li>
+                <li><a href="login.html" class="active">Log In</a></li>
+            </ul>
+        </nav>
+
+    <form>
+        <h2>Log In</h2>
+        <div class="inputBox">
+            <input type="text" required>
+            <label>Email</label>
+        </div>
+ 
+        <div class="inputBox">
+            <input type="password" required>
+            <label>Confirm Password</label>
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Create">
+        </div>
+        
+        <div class="inputBoxBottom">
+            <p> Don't have an Account ? <a href="signin.html">Sign In</a></p>
+        </div>
+        
+    </form>
+ 
+    <script>
+        document.querySelectorAll('label').forEach(label => {
+            label.innerHTML = label.innerText.split('').map((letter, i) =>
+                `<span style="transition-delay: ${i * 50}ms">${letter}</span>`
+            ).join('');
+        });
+    </script>
+        </body>
+        </html>
